@@ -4,18 +4,26 @@
 body{
     font-family: Arial;
     text-align: center;
-    background-image: url(https://images.saymedia-content.com/.image/t_share/MTkzOTUzODU0MDkyODc5MzY1/particlesjs-examples.gif);
+    background-image: url(https://theouterhaven.b-cdn.net/wp-content/uploads/2022/09/Tekken-8-Reveal-Trailer-Screw-Attack-1.gif);
+    background-blend-mode:soft-light;
+    background-color: #1d1c1c;
     background-repeat: no-repeat;
     height: 140vh;
     overflow: hidden;
     background-size: contain;
+
 }
+
+
+
 
 .quiz-container{
     max-width: 600px;
     margin: 0 auto;
     font-family: Oswald;
-
+    color: #faebd7;
+    justify-content: center;
+    translate: 0px 100px;
 }
 
 #pergunta {
@@ -35,7 +43,12 @@ button{
     font-size: 16px;
     cursor: pointer;
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(228, 228, 92);
+    background-color: #740000;
+    color: #faebd7;
+}
+
+button:hover{
+    box-shadow: 0px 0px 5px #0066aa;
 }
 
 .correto{

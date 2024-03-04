@@ -8,12 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <title>Quiz Engraçado</title>
+    <title>Fighting Quiz</title>
 </head>
 <body>
 
     <div class="quiz-container">
-        <h1>Perguntas Miscelâneas sobre jogos e variados. </h1>
+        <h1>Perguntas Miscelâneas sobre jogos de luta </h1>
 
         <div id="pergunta" class="pergunta"></div>
         <div id="opcoes" class="opcoes"></div>
@@ -24,21 +24,21 @@
     <script>
         const perguntas = [
             {
-                pergunta: "Cê manja de zoera?",
-                opcoes: ["nao", "sim", "coitado, novato"],
-                resposta: "coitado, novato"
+                pergunta: "Quem é o protagonista do Street Fighter 2?",
+                opcoes: ["Ryu", "Ken", "Zangief", "Juri"],
+                resposta: "Ryu"
             },
 
             {
                 pergunta: "Como se faz um Hadouken?",
-                opcoes:["236P", "623P", "360P", "Gangnsta Paradise"],
+                opcoes:["623P", "236P", "360P", "1080P"],
                 resposta:"236P"
             },
 
             {
-                pergunta: "Qual é a cor do cavalo branco do Napoleão?",
-                opcoes:["Branco", "Azul", "Verde", "Marrom"],
-                resposta:"Branco"
+                pergunta: "Quem é o diretor da franquia TEKKEN?",
+                opcoes:["Daisuke Ishiwatari", "Hideki Naganuma", "Katsuhiro Harada", "Michael Murray"],
+                resposta:"Katsuhiro Harada"
             }, 
 
             {
@@ -54,9 +54,9 @@
             },
 
             {
-                pergunta: "Onde fica o Brasil?",
-                opcoes:["Oriente Médio", "Na América do Sul", "Do lado da Coréia", "Porto Alegre"],
-                resposta:"Na América do Sul"
+                pergunta: "Quem é o pai de Jin Kazama em TEKKEN?",
+                opcoes:["Heihachi Mishima", "Jinpachi Mishima", "Jun Kazama", "Kazuya Mishima"],
+                resposta:"Kazuya Mishima"
             },
         ];
 
@@ -93,7 +93,7 @@
             if (indicePerguntaAtual < perguntas.length) {
                 setTimeout(carregarPergunta, 200); 
             } else {
-                resultadoElemento.textContent = "platinou o quiz mané";
+                resultadoElemento.textContent = "platinou o quiz mané! (recarregue a página pra tentar de novo)";
                 resultadoElemento.className = "";
             }
         }
@@ -102,4 +102,5 @@
     </script>
     
 </body>
+
 </html>
